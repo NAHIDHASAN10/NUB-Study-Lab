@@ -23,7 +23,7 @@ const Login = () => {
     try {
       // Send login data to the backend
       const response = await fetch(
-        "https://study-lab-server-side.vercel.app/api/auth/login",
+        "https://nub-study-lab-server.vercel.app/api/auth/login",
         {
           method: "POST",
           headers: {

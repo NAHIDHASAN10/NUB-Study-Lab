@@ -24,7 +24,7 @@ const Signup = () => {
     try {
       // Send registration data to the backend using fetch
       const response = await fetch(
-        "https://study-lab-server-side.vercel.app/api/auth/signup",
+        "https://nub-study-lab-server.vercel.app/api/auth/signup",
         {
           method: "POST",
           headers: {

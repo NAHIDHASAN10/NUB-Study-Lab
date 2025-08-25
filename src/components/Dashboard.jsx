@@ -13,7 +13,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    fetch("https://study-lab-server-side.vercel.app/api/profile", {
+    fetch("https://nub-study-lab-server.vercel.app/api/profile", {
       headers: { Authorization: token },
     })
       .then((response) => response.json())
@@ -34,7 +34,7 @@ const Dashboard = () => {
     e.preventDefault();
 
     const token = localStorage.getItem("token");
-    fetch("https://study-lab-server-side.vercel.app/api/profile/update", {
+    fetch("https://nub-study-lab-server.vercel.app/api/profile/update", {
       method: "POST",
       headers: {
         Authorization: token,
